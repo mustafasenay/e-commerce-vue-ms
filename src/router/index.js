@@ -1,23 +1,72 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import homePage from '../components/homePage.vue'
+import furniturePage from "../components/furnituresPage.vue"
+import decorPage from "../components/decorPage.vue"
+import storagePage from "../components/storagePage.vue"
+import lightingPage from "../components/lightingPage.vue"
+import officePage from "../components/officePage.vue"
+import bedroomPage from "../components/bedroomPage.vue"
+import bathroomPage from "../components/bathroomPage.vue"
+import kitchenPage from "../components/kitchenPage.vue"
+import outdoorPage from "../components/outdoorPage.vue"
+
+
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path : "/",
+    name : "homePage",
+    component : homePage
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path : "/furniture",
+    name : "furnituresPage",
+    component : furniturePage
+  },
+  {
+    path : "/decor",
+    name : "decorPage",
+    component : decorPage
+  },
+  {
+    path : "/storage",
+    name : "storagePage",
+    component : storagePage
+  },
+  {
+    path : "/lighting",
+    name : "lightingPage",
+    component : lightingPage
+  },
+  {
+    path : "/office",
+    name : "officePage",
+    component : officePage
+  },
+  {
+    path : "/bedroom",
+    name : "bedroomPage",
+    component : bedroomPage
+  },
+  {
+    path : "/bathroom",
+    name : "bathroomPage",
+    component : bathroomPage
+  },
+  {
+    path : "/kitchen",
+    name : "kitchenPage",
+    component : kitchenPage
+  },
+  {
+    path : "/outdoor",
+    name : "outdoorPage",
+    component : outdoorPage
   }
+  
 ]
 
 const router = new VueRouter({
