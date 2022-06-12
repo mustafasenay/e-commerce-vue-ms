@@ -19,13 +19,78 @@
                     </form>
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link me-lg-4  ms-md-3" aria-current="page" href="#"><i class="fas fa-user me-sm-3"></i>Register or Sign in </a>
+                            <router-link 
+                                to="/loginpage"
+                                tag = "a"
+                                class="nav-link me-lg-4  ms-md-3">
+                                <i class="fas fa-user me-sm-3"></i>
+                                Sign in
+                            </router-link>
+                            <router-link 
+                                to="/register"
+                                tag = "a"
+                                class="nav-link me-lg-4  ms-md-3">
+                                <i class="fas fa-user me-sm-3"></i>
+                                Register
+                            </router-link>
                         </li>
                         <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link me-lg-4  ms-md-3" aria-current="page" href="#"><i class="fas fa-heart me-sm-3"></i>Saved for later</a>
+                            <a class="nav-link me-lg-4  ms-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-heart me-sm-3"></i>Saved for later</a>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <h2>You don't have any favorite product</h2>
+                                        <p>Let's find something nice for you</p>
+                                        <button class="btn btn-dark p-3 text-white">Start Shopping</button>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </li>
                         <li class="nav-item d-flex align-items-center">
-                            <a class="nav-link me-lg-4  ms-md-3" aria-current="page" href="#"><i class="fas fa-shopping-cart me-sm-3"></i>Shopping cart</a>
+                            <a class="nav-link me-lg-4  ms-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2"><i class="fas fa-shopping-cart me-sm-3"></i>Shopping cart</a>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <h2>Your cart is empty</h2>
+                                        <p>Let's find something nice for you</p>
+                                        <button class="btn btn-dark p-3 text-white">Start Shopping</button>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <ul>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                            <li>Selam</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </li>
                     </ul>
                     </div>
@@ -137,13 +202,12 @@
                 </div>
             </div>
         </section>
-        
     </div>
 </template>
 
 <script>
 export default {
-    
+
 }
 </script>
 
