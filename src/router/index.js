@@ -10,6 +10,8 @@ import bedroomPage from "../components/bedroomPage.vue"
 import bathroomPage from "../components/bathroomPage.vue"
 import kitchenPage from "../components/kitchenPage.vue"
 import outdoorPage from "../components/outdoorPage.vue"
+import loginPage from "../components/loginPage.vue"
+import registerPage from "../components/registerPage.vue"
 
 
 
@@ -65,7 +67,17 @@ const routes = [
     path : "/outdoor",
     name : "outdoorPage",
     component : outdoorPage
-  }
+  },
+  {
+    path: '/loginpage',
+    name: 'loginPage',
+    component: loginPage
+  },
+  {
+    path: '/register',
+    name: 'registerPage',
+    component: registerPage
+  },
   
 ]
 
